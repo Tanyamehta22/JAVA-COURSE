@@ -2,15 +2,14 @@ class Hello
 {
     public static void main(String a[])
     {
-        // TYPE CONVERSION AND CASTING--
+        // TYPE PROMOTIONS--
 
-        int a = 257;
-        byte k = (byte) a;
+        byte a = 10;
+        byte b = 30;
 
-        float f = 5.6f;
-        int t = (int)f;
+        int result = a*b; // as a*b ==300 which is large so it will be saved in int
 
-        system.out.println(t);
+        system.out.println(result);
         
     }
 }
