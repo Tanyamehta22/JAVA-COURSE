@@ -2,19 +2,15 @@ class Hello
 {
     public static void main(String a[])
     {
-        int num1=9;
-        byte by = 127;
-        short sh= 558;
-        long l = 5854l;
+        // TYPE CONVERSION AND CASTING--
 
-        float f= 5.8f;
-        double d = 5.8;
+        int a = 257;
+        byte k = (byte) a;
 
-        char c = 'k';
-        char d= '8'; //literals
-        
-        boolean b = true;
+        float f = 5.6f;
+        int t = (int)f;
 
+        system.out.println(t);
         
     }
 }
