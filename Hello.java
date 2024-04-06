@@ -1,4 +1,4 @@
-// ARRAY OF OBJECTS IN JAVA---
+// FOR EACH LOOP AND ENHANCE LOOP IN JAVA---
 
 class Student
 {
@@ -7,6 +7,7 @@ class Student
     String name;
     int marks;
 }
+
 public class Hello
 {
     pubic static void main(String a[])
@@ -32,14 +33,19 @@ public class Hello
         students[1] = s2;
         students[2] = s3;
 
-        for (int i=0; i<students.length; i++)
+        // for (int i=0; i<students.length; i++)
+        // {
+        //     System.out.println(stundents[i].name + ":" + students[i].marks);
+        // }
+
+        // using foreach / enhance loop--
+        for (Student stud : students)
         {
-            System.out.println(stundents[i].name + ":" + students[i].marks);
+            System.out.println(stud.name + ":" + stud.marks);
         }
 
 
-
-        // int nums[] = new int[3];  
+        // int nums[] = new int[4];  
 
         // nums[0] = 4;
         // nums[1] = 8;
@@ -51,6 +57,11 @@ public class Hello
         // for (int i=0; i<nums.length; i++)
         // {
         //     System.out.println(nums[i]);
+        // }
+
+        // for (int n: nums)
+        // {
+        //     System.out.println(n);
         // }
 
          
