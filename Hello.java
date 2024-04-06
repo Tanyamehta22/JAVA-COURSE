@@ -1,19 +1,13 @@
 public class Hello {
     public static void main(String[] args) {
 
-        //UPDATED SWITCH STATEMENT IN JAVA --
+        //NEED FOR LOOP IN JAVA --
+         
+        // repeat this statement 4 times
+        // loop -- while, do while, for
+        // 100  -- condition
 
-        String day = "Sunday";
-        String result = "";
-
-        result = switch(day)
-        {
-            case "Saturday", "Sunday" -> "6am";
-            case "Monday" -> "8am";
-            default -> "7am";
-        };
-
-        System.out.println(result);
+        System.out.println("hi");
         
 
     }
