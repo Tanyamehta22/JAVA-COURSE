@@ -1,19 +1,37 @@
 public class Hello {
     public static void main(String[] args) {
 
-        // IF ELSE IF IN JAVA --
+        // TERNARY OPERATOR--
         
-        int  x = 5;
-        int y = 7;
-        int z =9;
-
-        if (x>y && x>z)
-            System.out.println(x);
-        else if(y>z)
-            System.out.println(y); 
-        else 
-            System.out.println(z);       
+         int n= 5;
+         int result =0;
          
+        //  if (n % 2==0)
+        //     result =10;
+        //  else
+        //     result= 20;
 
-    }
-}
+
+        // TERNARY-- CONDITION ? TRUE VALUE : FALSE VALUE;
+
+        result = n % 2==0 ? 10 : 20;
+
+        System.out.println(result);public class Hello {
+    public static void main(String[] args) {
+
+        // TERNARY OPERATOR--
+        
+         int n= 5;
+         int result =0;
+         
+        //  if (n % 2==0)
+        //     result =10;
+        //  else
+        //     result= 20;
+
+
+        // TERNARY-- CONDITION ? TRUE VALUE : FALSE VALUE;
+
+        result = n % 2==0 ? 10 : 20;
+
+        System.out.println(result);
