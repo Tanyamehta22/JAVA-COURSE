@@ -1,30 +1,18 @@
-class Hello
-{
-    public static void main(String a[])
-    {
-        // INCREMENT--
-        num1 += 1;
-        num2 -= 2;
-        num3 *= 8;
-        num1 ++; //post - increment same as num1= num1 +1;
-        ++ num1; //pre - increment
-        num1 --; //decrement
+public class Hello {
+    public static void main(String[] args) {
 
 
-
-        // DIFFERENCE BETWEEN PRE-INCREMENT AND POST-INCREMENT---
-
-        int result = ++num; // will print 8...it will first increment and then will fetch the value
+        // RELATIONAL OPERATORS-
         
-        int result = num++; // will print 7...it will first fetch the value of num and then increment
+        int x = 6;
+        int y = 5;
 
-        system.out.println(result);
-     
+        boolean result = x <= y;
+        // boolean result = x != y;
+        // boolean result = x == y;
+    
 
-          
-          
- 
- 
-        
+        System.out.println(result);
+
     }
 }
