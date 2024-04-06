@@ -3,15 +3,17 @@ public class Hello
     public static void main(String[] args) {
     
 
-        // DO WHILE LOOP-->> used to make the loop run atleast one time
-            int i = 5;
-
-            do 
+        // FOR LOOP-->> WHEN WE DON'T KNOW WHEN THE LOOP IS GOING TO END.
+        
+        for (int i=1; i<=5; i++)
+        {
+            System.out.println("DAY" + i);
+            for (int j=1; j<=9; j++)
             {
-                System.out.println("Hi" + i);
-                i++;
+                System.out.println(" "+(j+8)+ "-"+(j+9));
             }
-            while (i<=4);
+        }
+ 
  
         
 
