@@ -1,17 +1,20 @@
 public class Hello {
     public static void main(String[] args) {
 
-        // LOGICAL OPERATORS--
-        int x = 7;
-        int y = 5;
-        int a = 5;
-        int b = 9;
+        // IF ELSE IN JAVA --
+        
+        int  x = 5;
+        int y = 7;
 
-        // boolean result = x > y && a > b;
-        boolean result = x > y || a > b;
-        boolean result1 = a > b;
-        System.out.println(!result1);
-        System.out.println(result);
+        if (x>y)
+        {
+            System.out.println(x);
+            System.out.println("Thank you");
+        }
+    
+        else
+            System.out.println(y);    
+         
 
     }
 }
