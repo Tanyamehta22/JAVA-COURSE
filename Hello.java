@@ -4,7 +4,7 @@ public class Hello
 {
     pubic static void main(String a[])
     {
-        int nums[][] = new int[3][];  //THIS IS CALLED JAGGED ARRAY
+        int nums[][][] = new int[3][4][5];  //THIS IS CALLED 3 dimentional ARRAY
 
         nums[0] = new int[3];
         nums[1] = new int[4];
