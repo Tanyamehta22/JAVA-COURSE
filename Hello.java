@@ -3,7 +3,7 @@ public class Hello
     public static void main(String[] args) {
     
 
-        // FOR LOOP-->> WHEN WE DON'T KNOW WHEN THE LOOP IS GOING TO END.
+        // COMPARISION OF LOOPS (fastest and while loop have the best storage database) -->> WHEN WE DON'T KNOW WHEN THE LOOP IS GOING TO END.
         
         for (int i=1; i<=5; i++)
         {
