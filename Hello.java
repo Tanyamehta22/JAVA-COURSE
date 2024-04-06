@@ -1,29 +1,22 @@
-// STACK AND HEAP IN JAVA--
+// CREATION OF ARRAY IN JAVA---
 
-class Calculator
-{
-    int num= 5;
-
-    public int add(int n1, int n2)
-    {
-        System.out.println(num);
-        return n1 + n2;
-    }
-}
-
-public class Hello 
+public class Hello
 {
     public static void main(String a[])
     {
-        int data = 10;
-         
-        Calculator obj = new Calculator();
-        Calculator obj1 = new Calculator();
-        int r1 = obj.add(3,4);
-        // System.out.println(r1); 
+        // int nums[] = {3,7,2,4};
+        int nums[] = new int[4]; //another way to declare array
+        nums[0]=6;
+        nums[1]=3;
+        nums[2]=4;
+        nums[3]=5;
 
-        obj.num= 8;
-        System.out.println(obj.num);
-        System.out.println(obj1.num);
+        for (int i =0; i<4; i++)
+        {
+            System.out.println(nums[i]);
+        }
+        
+       
     }
+
 }
