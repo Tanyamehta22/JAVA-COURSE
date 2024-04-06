@@ -1,14 +1,26 @@
-public class Hello {
+public class Hello 
+{
     public static void main(String[] args) {
+    {   
+            int i = 1;
 
-        //NEED FOR LOOP IN JAVA --
-         
-        // repeat this statement 4 times
-        // loop -- while, do while, for
-        // 100  -- condition
+            while(i<=4)
+        {
+            System.out.println("hi" + i);
+            int j =1;
+            while (j<=3){
+                System.out.println("Hello" + j);
+                j++;
+            }
 
-        System.out.println("hi");
+            i++;
+            
+        }
+
+        System.out.println("bye" + i);
+        
         
 
     }
-}
+
+ }
