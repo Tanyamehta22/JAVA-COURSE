@@ -1,22 +1,30 @@
-public class Hello 
+// CLASS AND OBJECT PRACTICLE IN JAVA-->
+
+class Calculator
 {
-    public static void main(String[] args) {
-    
+    int a;
 
-        // COMPARISION OF LOOPS (fastest and while loop have the best storage database) -->> WHEN WE DON'T KNOW WHEN THE LOOP IS GOING TO END.
-        
-        for (int i=1; i<=5; i++)
-        {
-            System.out.println("DAY" + i);
-            for (int j=1; j<=9; j++)
-            {
-                System.out.println(" "+(j+8)+ "-"+(j+9));
-            }
-        }
- 
- 
-        
-
+    public int add(int n1, int n2)
+    {
+        int r = n1 + n2;
+        return r;
     }
 
- }
+}
+
+public class Hello
+{
+    public static void main(String a[])
+    {
+        int num1=4;
+        int num2=5;
+        
+        //OBJECT CREATION-
+        Calculator calc = new Calculator();
+
+        int result = calc.add(num1, num2);
+        // int result = num1 + num2;
+        System.out.println(result);
+    }
+
+} 
