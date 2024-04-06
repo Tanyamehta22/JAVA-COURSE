@@ -1,32 +1,29 @@
-// METHODS IN JAVA-->
+// METHOD OVERLOADING--
 
-class Computer
+class Calculator
 {
-     public void playMusic()
-     {
-        System.out.println("Music Playing..");
-     }
+    public int add(int n1, int n2, int n3)
+    {
+        return n1+ n2 + n3;
+    }
 
-     public String getMeAPen(int cost)
-     {
-        if (cost >= 10)
-            return "Pen";
-        else
-            return "Nothing";    
-     }
+    public int add(int n1, int n2)
+    {
+        return n1+ n2;
+    }
 
+    public double add(double n1, int n2)
+    {
+        return n1+ n2;
+    }
 }
 
-public class Hello
+public class Hello 
 {
     public static void main(String a[])
     {
-
-       Computer obj = new Computer();
-       obj.playMusic();  
-       String str= obj.getMeAPen(2);
-       System.out.println(str);
-
+        Calculator obj = new Calculator();
+        int r1 = obj.add(3,4);
+        System.out.println(r1); 
     }
-
 }
