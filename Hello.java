@@ -1,5 +1,4 @@
-// STATIC VARIABLE--MAKING SOMETHING AS A CLASS MEMBER NOT A OBJECT MEMBER--
-
+// STATIC METHOD- 
 class Mobile 
 {
 
@@ -14,6 +13,13 @@ class Mobile
     // In non-static method we can use static variable
     System.out.println(brand + " : " + price + ":" + name +":");
   }
+}
+
+// CREATING A STATIC METHOD --AND CALLING IT USING A CLASS NAME=>
+// NOTE-- U CAN USE A STATIC VARIABLE INSIDE A STATIC METHOD BUT U CANNOT USE A NON STATIC VARIABLE INSIDE A STATIC METHOD--
+public static void show1(Mobile obj)
+{
+  System.out.println(obj.brand + " : " + obj.price + ":" + name +":");
 }
 
 public class Hello
@@ -37,6 +43,9 @@ public class Hello
 
     obj1.show();
     obj2.show();
+
+    // CALLING STATIC METHOD--
+    Mobile.show1(obj1);
 
   }
 }
