@@ -1,9 +1,21 @@
-// THIS KEYWORD IN JAVA---
+// CONSTRUCTOR IN JAVA---
 
 class Human 
 {
   private int age;
   priavte String name;
+
+
+    //CONSRUCTOR - THEY HAVE SAME NAME AS CLASS AND ARE SIMILAR TO METHOD EXCEPT THEY DON'T HAVE A RETURN TYPE--->
+    // WE DON'T NEED TO CALL A CONSTRUCTOR, WHENEVER WE CREATE AN OBJECT IT CALLS THE CONSTRUCTOR.
+    // BY DEFAULT WE CAN  ALSO ASSIGN VALUE IN CONSTRUCTOR-->
+
+    public Human()
+    {
+        // System.out.println("in constructor");
+        age =12;
+        name = "John";
+    }
 
   // getter->
   public int getAge()
