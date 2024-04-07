@@ -5,11 +5,13 @@ class Human
   private int age;
   priavte String name;
 
+  // getter->
   public int getAge()
   {
     return age;
   }
 
+  //setter->
   public void setAge(int a)
   {
       age = a;
