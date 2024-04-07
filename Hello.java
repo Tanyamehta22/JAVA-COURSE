@@ -1,4 +1,4 @@
-// ENCAPSULATION IN JAVA---
+// THIS KEYWORD IN JAVA---
 
 class Human 
 {
@@ -12,9 +12,9 @@ class Human
   }
 
   //setter->
-  public void setAge(int a)
+  public void setAge(int age)
   {
-      age = a;
+      this.age = age; //THIS IS A KEYWORD THAT REPRESENTS CURRENT OBJECT..OBJECT WHICH IS CALLING THE METHOD.
   }
 
   public String getName()
@@ -22,9 +22,9 @@ class Human
     return name;
   }
 
-  public void setName(String n)
+  public void setName(String name)
   {
-    name =n;
+    this.name =name;
   }
 }
 
