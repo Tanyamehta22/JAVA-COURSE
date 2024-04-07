@@ -1,4 +1,4 @@
-// STATIC METHOD- 
+// STATIC BLOCK--
 class Mobile 
 {
 
@@ -6,6 +6,20 @@ class Mobile
   String brand;
   int price;
   Static String name;  // by using static we are making it common for all objects.
+
+ //STATIC BLOCK--IT WILL BE CALLED ONLY ONCE->
+
+  static
+  {
+    name = "Phone";
+    System.out.println("in statis block");
+  }
+  public Mobile()
+  {
+    brand = "";
+    price = 200;
+    System.out.println("in constructor");
+  }
 
   public void show()
   {
@@ -15,37 +29,32 @@ class Mobile
   }
 }
 
-// CREATING A STATIC METHOD --AND CALLING IT USING A CLASS NAME=>
-// NOTE-- U CAN USE A STATIC VARIABLE INSIDE A STATIC METHOD BUT U CANNOT USE A NON STATIC VARIABLE INSIDE A STATIC METHOD--
-public static void show1(Mobile obj)
-{
-  System.out.println(obj.brand + " : " + obj.price + ":" + name +":");
-}
+ 
 
 public class Hello
 {
   public static void main(String a[])
   {
-    Mobile obj1 = new Mobile();
-    obj1.brand = "Apple";
-    obj1.price ="1500";
-    // obj1.name = "SmartPhone";
-    Mobile.name = "SmartPhone";  // static variable should be called with class name
+    Class.forName(className: "Mobile"); 
+    //THIS WILL CALL THE CLASS EVEN WHEN WE DON'T CREATE AN OBJECT
 
-    Mobile obj2 = new Mobile();
-    obj2.brand = "Samsung";
-    obj2.price = "1700";
-    // obj2.name = "SmartPhone";
-    Mobile.name = "SmartPhone";
+     
+    // Mobile obj1 = new Mobile();
+    // obj1.brand = "Apple";
+    // obj1.price ="1500";
+    // // obj1.name = "SmartPhone";
+    // Mobile.name = "SmartPhone";  // static variable should be called with class name
+
+    
    
 
-    obj1.name = "Phone"; // we are changing the name of obj1 but it will also change the name of obj2 as well because we are using static
+    // obj1.name = "Phone"; // we are changing the name of obj1 but it will also change the name of obj2 as well because we are using static
 
-    obj1.show();
-    obj2.show();
+    // obj1.show();
+    // obj2.show();
 
-    // CALLING STATIC METHOD--
-    Mobile.show1(obj1);
+    // // CALLING STATIC METHOD--
+    // Mobile.show1(obj1);
 
   }
 }
