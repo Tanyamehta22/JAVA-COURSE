@@ -1,27 +1,42 @@
-// STRINGBUFFER AND STRINGBUILDER IN JAVA--
+// STATIC VARIABLE--MAKING SOMETHING AS A CLASS MEMBER NOT A OBJECT MEMBER--
+
+class Mobile 
+{
+
+  // called instance variable
+  String brand;
+  int price;
+  Static String name;  // by using static we are making it common for all objects.
+
+  public void show()
+  {
+    //varible inside method is called local variable
+    // In non-static method we can use static variable
+    System.out.println(brand + " : " + price + ":" + name +":");
+  }
+}
+
 public class Hello
 {
-  public static void main(string a[])
+  public static void main(String a[])
   {
-        StringBuffer sb = new StringBuffer(); // return 16 as this is the buffer size
+    Mobile obj1 = new Mobile();
+    obj1.brand = "Apple";
+    obj1.price ="1500";
+    // obj1.name = "SmartPhone";
+    Mobile.name = "SmartPhone";  // static variable should be called with class name
 
-        StringBuffer sb = new Stringbuffer("Navin"); // will return 21 (16+5)
+    Mobile obj2 = new Mobile();
+    obj2.brand = "Samsung";
+    obj2.price = "1700";
+    // obj2.name = "SmartPhone";
+    Mobile.name = "SmartPhone";
+   
 
-        System.out.println(sb.capacity());
-        System.out.println(sb.length()); //return 5
+    obj1.name = "Phone"; // we are changing the name of obj1 but it will also change the name of obj2 as well because we are using static
 
-        sb.append("Reddy")
-        System.out.println(sb) // will return Navin Reddy
+    obj1.show();
+    obj2.show();
 
-        String str = sb.toString(); //will convert stringbuffer to string using tostring
-
-        sb.deleteCharAt(index:2); //delete the index at the given data
-
-        sb.insert(0, "Java");
-        sb.setLength(newlength :30);
-        sb.ensureCapacity(minimumCapacity: 100);
-
-        // DIFFERENCE BETWEEN STRING BUFFER AND STRING BUILDER--
-        // STRING BUFFER IS THREAD SAFE AND STRING BUIDER IS NOT
   }
 }
