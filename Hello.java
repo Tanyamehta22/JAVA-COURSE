@@ -1,26 +1,45 @@
-/  INHERITANCE IN JAVA--
+//  THIS AND SUPER METHOD IN JAVA-->>
 
-
-public class Hello
+// NOTE-> EVERY CLASS IN JAVA EXTEND AN OBJECT CLASS-->
+class A extends Object
 {
-    public static void main(String a [])
+    public A()
     {
-        VeryAdvCalc obj = new VeryAdvCalc();
-        int r1 = obj.add(7,3);
-        int r2 = obj.sub(4,5);
-        int r3 = obj.multi(4,5);
-        int r4 = obj.div(4,5);
-        double r5 = obj.power(r3, r4);
+        super(); // CALLING CONSTRUCTOR OF OBJECT CLASS
+        System.out.println("in A");
+    }
 
-        System.out.println(r1 + "" + r2 + ""  + r3 + "" + r4 + "" + r5);
+    public A( int n)
+    {
+        super();
+        System.out.println("in A int");
+    }
+
+}
+
+class B extends A 
+{
+    public B()
+    {
+        super(); // Super calls the constructor of super class this method is always here even if we don't write it. 
+        System.out.println("in B");
+
+    }
+
+    public B(int n)
+    {
+        this(); // this will excute the constructor of the same class 
+        // super(n); // now a parameteised super class will be called
+        System.out.println("in B int");
+
     }
 }
 
-
-public class VeryAdvCalc extends AdvCalc
+public class Hello
 {
- public double power(int n1, int n2)
- {
-    return Math.pow(n1,n2);
- }   
+    public static void main(String a[])
+    {
+        B obj = new B();
+    }
+
 }
