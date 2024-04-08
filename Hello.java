@@ -1,48 +1,51 @@
-// DYNAMIC METHOD DISPATCH IN JAVA--->>
-class A
+// FINAL-- ONCE WE USED FINAL ( CONSTANT) WE CANNOT CHANGE THE VALUE.
+//  FINAL IS USED IN VARIABLE, METHOD, CLASS-->
+
+//  FINAL CLASS -->>
+// final class Calc
+// as the class is final not everyone can use it
+ class Calc
+{
+    //FINAL METHOD-->> it helps in avoiding method overriding.
+   public final void show()
+   {
+        System.out.println("By Navin");
+   }
+
+   public void add(int a, int b)
+   {
+    System.out.println(a+b);
+   }
+}
+
+class AdvCalc extends Calc // this will not be able to implement as Calc is using a final keyword 
 {
     public void show()
     {
-        System.out.println("in A Show");
+        System.out.println("By John");
     }
-        
-    
 }
 
-class B extends A
+public class Demo
 {
-    public void show()
+    public static void main (String a[])
     {
-        System.out.println("in B Show");
+        AdvCalc obj = new AdvCalc();
+        obj.show();
+        obj.add(a:4, b:5);
     }
-
 }
 
-class C extends A
-{
-    public void show()
-    {
-        System.out.println("in C Show");
-    }
-
-}
+// public class Demo
+// {
+//     public static void main(String a[])
+//     {   
+//         // FINAL VARIABLE->
+//         final int num =8;
+//         num=9;
+//         System.out.println(num);
+//     }
+// } 
 
  
-
-public class Demo {
-    public static void main(String a[])
-    {
-    //    A obj = new B(); // THIS IS POSSIBLE TO CREATE REFERENCE OF A SUPERCLASS AND OBJECT OF SUBCLASS
-    //    obj.show();
-
-    // THIS IS CALLED DYNAMIC METHOD DISPATCH-- WE DO NOT KNOW WHICH MWTHOD WILL RUN..IT WILL BE DECIDED IN RUN TIME.
-       A obj = new A();  
-       obj.show();
-
-       obj = new B();
-       obj.show();
-
-       Obj = new C();
-       obj.show();
-    }
-}
+ 
