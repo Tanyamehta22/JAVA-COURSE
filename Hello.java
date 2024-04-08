@@ -1,45 +1,32 @@
-//  THIS AND SUPER METHOD IN JAVA-->>
+ // METHOD OVERRIDING IN JAVA-->>
 
-// NOTE-> EVERY CLASS IN JAVA EXTEND AN OBJECT CLASS-->
-class A extends Object
+class Calc
 {
-    public A()
+    public int add(int n1, int n2)
     {
-        super(); // CALLING CONSTRUCTOR OF OBJECT CLASS
-        System.out.println("in A");
+        return n1+ n2;
     }
 
-    public A( int n)
-    {
-        super();
-        System.out.println("in A int");
-    }
-
+    
 }
 
-class B extends A 
+class AdvCalc extends Calc
 {
-    public B()
+    // this method override the above method of A as more preferernce is given to its own method-->>
+    public int add(int n1, int n2)
     {
-        super(); // Super calls the constructor of super class this method is always here even if we don't write it. 
-        System.out.println("in B");
-
+        return n1+ n2+1;
     }
 
-    public B(int n)
-    {
-        this(); // this will excute the constructor of the same class 
-        // super(n); // now a parameteised super class will be called
-        System.out.println("in B int");
 
-    }
 }
 
 public class Hello
 {
     public static void main(String a[])
     {
-        B obj = new B();
+        AdvCalc obj = new AdvCalc();
+        int r1 = obj.add(n1:3, n2:4);
+        System.out.println(r1);
     }
-
 }
