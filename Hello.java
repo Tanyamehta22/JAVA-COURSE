@@ -1,19 +1,5 @@
-// PACKAGES IN JAVA-->>
-// package com.google.calculations; // IN THIS WAY WE CAN NAME PACKAGES
-import tool.AdvCalc;
-import tool.Calc;
-import java.util.ArrayList;
-import java.lang.*; // this is by default imported
-
-public class Hello
-{
-    public static void main(String a[])
-    {
-        ArrayList list = new ArrayList<>();
-
-        Calc obj = new Calc();
-        AdvCalc obj1 = new AdvCalc();
-
-        System.out.println();
-    }
-}
+//ACCESS MODIFIERS--->>
+// 1) PUBLIC-- CAN BE ACCESS FROM ANY class
+// 2) PRIVATE -- SAME CLASS ONLY
+// 3) DEFAULT-- CAN BE ACCESS IN SAME PACKAGE
+// 4) PROTECTED -- NOT OUTSIDE PACKAGE BUT IN SUBCLASS OF ANY PACKAGE
